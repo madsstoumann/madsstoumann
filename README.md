@@ -1,4 +1,9 @@
-### Hi there 👋
+[![Mads Stoumann's GitHub Banner](./assets/images/github.png)](https://elements.stoumann.dk)
+### Hi, I'm Mads. 👋
+
+Thanks for stopping by!
+
+I'm a web developer, graphic designer, type designer, musician, comicbook-geek, LEGO-collector, food lover  &hellip; as well as husband and father, located just south of Copenhagen, Denmark.
 
 <!--
 **madsstoumann/madsstoumann** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
