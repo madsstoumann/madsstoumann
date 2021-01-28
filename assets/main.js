@@ -1,9 +1,37 @@
-function B(e){this.contains(e.target)||(location.hash="#")}function K(e){if("Tab"===e.key){e.preventDefault();const t=this.__f.length-1;let n=this.__f.indexOf(e.target);(n=e.shiftKey?n-1:n+1)<0&&(n=t),n>t&&(n=0),this.__f[n].focus()}"Escape"===e.key&&(location.hash="#")}g.addEventListener("click",()=>document.body.classList.toggle("bf",g.checked)),h.addEventListener("input",()=>P("--h",h.valueAsNumber)),s.addEventListener("input",()=>P("--s",`${s.value}%`)),l.addEventListener("input",()=>P("--l",`${l.value}%`)),window.addEventListener("hashchange",e=>{const[t,n]=e.newURL.split("#"),[o,s]=e.oldURL.split("#");if(n){const e=document.getElementById(n);e&&(document.body.addEventListener("click",B.bind(e)),e.addEventListener("keydown",K),e.__f=[...e.querySelectorAll("[href]")],e.__f[0].focus())}s&&(document.body.removeEventListener("click",B),document.getElementById(s).removeEventListener("keydown",K),document.querySelector(`[href*="#${s}"]`).focus()),setTimeout(()=>window.scrollTo(0,0),10)});const P=(e,t)=>document.documentElement.style.setProperty(e,t);
+const P = (k,v) =>  document.documentElement.style.setProperty(k, v);
+g.addEventListener('click', () => document.body.classList.toggle('bf', g.checked));
+h.addEventListener('input', () => P('--h', h.valueAsNumber));
+s.addEventListener('input', () => P('--s', `${s.value}%`));
+l.addEventListener('input', () => P('--l', `${l.value}%`));
 
-/* TMP: Fix #links, when hosting locally */
-if (location.href.includes('127.0.0.1')) {
-	const tmp = document.querySelectorAll('.c-nav__item');
-	tmp.forEach(link => {
-		link.href.baseVal = link.href.baseVal.replace('/#', '#')
-	});
+window.addEventListener('hashchange', (e) => {
+	const [n, N] = e.newURL.split('#');
+	const [o, O] = e.oldURL.split('#');
+
+	if (N) {
+		const m = document.getElementById(N);
+		if (m) {
+			m.addEventListener('keydown', K);
+			m.__f = [...m.querySelectorAll('[href]')];
+			m.__f[0].focus();
+		}
+	}
+	if (O) {
+		document.getElementById(O).removeEventListener('keydown', K);
+		document.querySelector(`[href*="#${O}"]`).focus();
+	}
+	setTimeout(() => window.scrollTo(0,0), 10);
+});
+
+function K(e) {
+	if (e.key === 'Tab') {
+		e.preventDefault();
+		const l =  this.__f.length - 1;
+		let x = this.__f.indexOf(e.target);
+		x = e.shiftKey ? x-1 : x+1;
+		if (x < 0) x = l;
+		if (x > l) x = 0;
+		this.__f[x].focus();
+	}
+	if (e.key === 'Escape') location.hash = '#';
 }
