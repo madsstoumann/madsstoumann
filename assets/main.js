@@ -1,9 +1,27 @@
+const D = (n, t) => {
+  let e = document.createElement('a');
+  e.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(t));
+	e.setAttribute('download', n);
+	e.hidden = true;
+	document.body.appendChild(e);
+	e.click();
+	document.body.removeChild(e);
+}
 const P = (k,v) =>  document.documentElement.style.setProperty(k, v);
+
 g.addEventListener('click', () => document.body.classList.toggle('bf', g.checked));
 h.addEventListener('input', () => P('--h', h.valueAsNumber));
 s.addEventListener('input', () => P('--s', `${s.value}%`));
 l.addEventListener('input', () => P('--l', `${l.value}%`));
-
+x.addEventListener('click', () => {
+	const a = document.querySelectorAll('.c-grid__item:not(.c-grid__item--range');
+	let s = '';
+  a.forEach(c => {
+    if (c.innerText) {
+			s += `.${c.innerText.replace(/ /g,'').toLowerCase()} { color: ${window.getComputedStyle(c).getPropertyValue('background-color')}; }\n`;
+    }
+	}); D('styles.css', s);
+});
 window.addEventListener('hashchange', (e) => {
 	const [n, N] = e.newURL.split('#');
 	const [o, O] = e.oldURL.split('#');
