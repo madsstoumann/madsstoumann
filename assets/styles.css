@@ -857,6 +857,13 @@ main {
 	}
 }
 
+.svg-hidden {
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 0; 
+}
+
 .sr-only {
 	clip: rect(0 0 0 0); 
 	clip-path: inset(50%);
