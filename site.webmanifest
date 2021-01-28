@@ -1,7 +1,8 @@
 {
     "name": "Mads Stoumann - Personal Website",
-    "short_name": "Mads Stoumann",
-    "start_url": ".",
+    "background_color": "#055387",
+    "categories": ["business", "productivity"],
+    "display": "standalone",
     "icons": [
         {
             "src": "assets/favicon//android-chrome-192x192.png",
@@ -14,7 +15,10 @@
             "type": "image/png"
         }
     ],
+    "lang": "en-US",
+    "orientation": "any",
+    "short_name": "Mads Stoumann",
+    "start_url": ".",
     "theme_color": "#055387",
-    "background_color": "#055387",
-    "display": "standalone"
+    "url": "https://stoumann.dk"
 }
