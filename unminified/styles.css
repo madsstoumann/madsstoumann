@@ -872,9 +872,6 @@ text {
 [name="poly"]:checked ~ .p {
 	top: var(--rng-h);
 }
-[name="poly"]:checked + .pl {
-	z-index: 11;
-}
 
 /* RWD */
 @media (min-width: 800px) {
@@ -917,7 +914,6 @@ text {
 	}
 
 	.pl {
-		/* left: 5.5rem; */
 		top: 7rem;
 	}
 
