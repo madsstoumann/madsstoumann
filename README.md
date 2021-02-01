@@ -33,12 +33,13 @@ I work as a Technical Director at Valtech, Denmark.
   <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api?username=madsstoumann&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=4AB097&bg_color=1A2B34" alt="Martin's GitHub Stats" />
 </a>
 
----
+<!--
 
 ## Skills
 
 ![](https://img.shields.io/badge/Code-HTML5-informational?style=flat&logo=HTML5&logoColor=white&color=035287)
 ![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=JavaScript&logoColor=white&color=035287)
+![](https://img.shields.io/badge/Code-VueJS-informational?style=flat&logo=Vue&logoColor=white&color=035287)
 ![](https://img.shields.io/badge/Style-CSS-informational?style=flat&logo=css3&logoColor=white&color=035287)
 ![](https://img.shields.io/badge/Style-Sass-informational?style=flat&logo=Sass&logoColor=white&color=035287)
 ![](https://img.shields.io/badge/Code-SQL-informational?style=flat&logo=MSSQL&logoColor=white&color=035287)
@@ -51,7 +52,7 @@ I work as a Technical Director at Valtech, Denmark.
 
 
 
-<!--
+
 **madsstoumann/madsstoumann** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
