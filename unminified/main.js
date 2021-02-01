@@ -1,8 +1,7 @@
-/* Version 1.0.1 */
 const P = (k,v) => document.documentElement.style.setProperty(k, v);
 const D = (n, t) => {
-  let e = document.createElement('a');
-  e.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(t));
+	let e = document.createElement('a');
+	e.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(t));
 	e.setAttribute('download', n);
 	e.hidden = true;
 	document.body.appendChild(e);
@@ -12,7 +11,6 @@ const D = (n, t) => {
 
 i.addEventListener('input', () => Y(p.valueAsNumber, i.valueAsNumber));
 p.addEventListener('input', () => Y(p.valueAsNumber, i.valueAsNumber));
-g.addEventListener('click', () => document.body.classList.toggle('bf', g.checked));
 h.addEventListener('input', () => P('--h', h.valueAsNumber));
 s.addEventListener('input', () => P('--s', `${s.value}%`));
 l.addEventListener('input', () => P('--l', `${l.value}%`));
@@ -20,14 +18,13 @@ t.addEventListener('input', () => P('--t', t.checked ? 'none' : 'block'));
 x.addEventListener('click', () => {
 	const a = document.querySelectorAll('.gi:not(.gir');
 	let s = '';
-  a.forEach(c => {
-    if (c.innerText) {
+	a.forEach(c => {
+		if (c.innerText) {
 			s += `.${c.innerText.replace(/ /g,'').toLowerCase()} { color: ${window.getComputedStyle(c).getPropertyValue('background-color')}; }\n`;
-    }
+		}
 	});
 	D('styles.css', s);
 });
-y.addEventListener('click', () => document.body.classList.toggle('bf', y.checked));
 
 window.addEventListener('hashchange', (e) => {
 	const [n, N] = e.newURL.split('#');
@@ -37,7 +34,7 @@ window.addEventListener('hashchange', (e) => {
 		const m = document.getElementById(N);
 		if (m) {
 			m.addEventListener('keydown', K);
-			m.__f = [...m.querySelectorAll('[href]')];
+			m.__f = [...m.querySelectorAll('[href], button, input')];
 			m.__f[0].focus();
 		}
 	}
@@ -45,7 +42,7 @@ window.addEventListener('hashchange', (e) => {
 		document.getElementById(O).removeEventListener('keydown', K);
 		document.querySelector(`[href*="#${O}"]`).focus();
 	}
-	setTimeout(() => window.scrollTo(0,0), 10);
+	setTimeout(() => window.scrollTo(32,0), 10);
 });
 
 function K(e) {

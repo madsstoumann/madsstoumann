@@ -5,12 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="description" content="This is the personal website of Mads Stoumann">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<meta name="theme-color" content="#fff">
-	<link href="assets/styles.css?v=1.0.3" rel="preload stylesheet" as="style" media="screen">
+	<link href="assets/styles.css?v=1.0.4" rel="preload stylesheet" as="style" media="screen">
 	<meta http-equiv="Content-Security-Policy" content="
 		default-src;
 		script-src 'self';
@@ -27,28 +22,31 @@
 	">
 </head>
 <body>
-	<input class="sr" type="checkbox" id="a11y" name="a11y" />
+	<input class="sr" type="checkbox" id="a" name="ani" />
+	<input class="sr" type="checkbox" id="cl" name="cl" />
 	<main>
 
 		<h1 class="sr">Mads Stoumann - Welcome</h1>
-
-		<input class="sr" type="checkbox" id="y" name="poly" />
-		<label class="pl" for="y" aria-label="Toggle Polygon Editor">
-			<svg class="i"><use fill="var(--c7)" xlink:href="#po"></use></svg>
-		</label>
 
 		<label class="rl" aria-label="Change the color-palette of the website">
 			<input type="range" class="r r--h" id="h" min="0" max="360" value="197" />
 		</label>
 
-		<label class="a11y" for="a11y" aria-label="Toggle High Contrast B/W Theme">
-			<svg class="i i--a11y"><use xlink:href="#ip"></use></svg>
+		<a href="#poly" class="b pl" aria-label="Toggle Polygon Editor">
+			<svg class="i"><use fill="var(--c5)" xlink:href="#po"></use></svg>
+		</a>
+
+		<label class="b cl" for="cl" aria-label="Toggle High Contrast B/W Theme">
+			<svg class="i"><use fill="var(--cl-ico)" xlink:href="#ip"></use></svg>
 		</label>
 
-		<input class="sr" type="checkbox" id="g" name="grid" />
-		<label class="gl" for="g" aria-label="Toggle Generated Colors">
-			<svg class="gco"><use xlink:href="#io"></use></svg>
+		<label class="an" for="a">
+			Disable Animations &amp; Transitions
 		</label>
+
+		<a href="#grid" class="b gl" aria-label="Toggle Generated Colors">
+			<svg class="i"><use xlink:href="#io"></use></svg>
+		</a>
 
 		<article class="s" id="madsstoumann">
 			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
@@ -176,8 +174,8 @@
 			</svg>
 		</div>
 
-		<div class="g">
-			<button type="button" class="gx" id="x" tabindex="-1">Download Theme</button>
+		<div class="g" id="grid">
+			<a class="b glc" href="#" tabindex="-1" aria-label="Close"><svg class="i"><use xlink:href="#ic"></use></svg></a>
 			<div class="gi gi--r"><span>Primary</span></div>
 			<div class="gi gi--r"><span>Complimentary</span></div>
 			<div class="gi gi--l"><span>Triad 1</span></div>
@@ -224,9 +222,17 @@
 					<input type="range" class="r r--l" min="0" max="100" value="61" id="l" tabindex="-1" />
 				</label>
 			</div>
+			<button type="button" class="gx" id="x" tabindex="-1">Download Theme</button>
 		</div>
 
-		<div class="p">
+		<div class="p" id="poly">
+			<div class="plc">
+				<a class="b" href="#" tabindex="-1" aria-label="Close"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			</div>
+			<label class="plp">
+				<input class="sr" type="checkbox" id="t" name="text" tabindex="-1" />
+				<span>Toggle Menu Text</span>
+			</label>
 			<label class="plr">
 				<input type="range" class="r r--p" id="p" min="2" max="50" value="0" tabindex="-1" />
 				<span>Polygon Sides</span>
@@ -234,13 +240,6 @@
 			<label class="plr">
 				<input type="range" class="r r--i" id="i" min="0" max="50" value="0" tabindex="-1" />
 				<span>Polygon Inset</span>
-			</label>
-			<label class="plp">
-				<input class="sr" type="checkbox" id="t" name="text" tabindex="-1" />
-				<span>Hide Menu Text</span>
-			</label>
-			<label class="plp" for="y" aria-label="Toggle Polygon Editor">
-				<span>Close Overlay</span>
 			</label>
 		</div>
 	</main>
@@ -284,6 +283,7 @@
 			</linearGradient>
 		</defs>
 	</svg>
-	<script src="assets/main.js?v=1.0.1" defer></script>
+
+	<script src="assets/main.js?v=1.0.4" defer></script>
 </body>
 </html>	
