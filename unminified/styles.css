@@ -5,6 +5,7 @@
 	src: local(''),
 			 url('fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
 			 url('fonts/montserrat-v15-latin-regular.woff') format('woff');
+	font-display: swap;
 }
 :root {
 	--c: none;
@@ -78,7 +79,6 @@
 	--c-tn8: hsl(var(--h), var(--s), calc(var(--l) + ((100% - var(--l)) / 10) * 8));
 	--c-tn9: hsl(var(--h), var(--s), calc(var(--l) + ((100% - var(--l)) / 10) * 9));
 
-	font-display: swap;
 	font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 	height: -webkit-fill-available;
 	scroll-behavior: smooth;
