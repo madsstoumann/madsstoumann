@@ -1,3 +1,4 @@
+/* VERSION 1.0.7 */
 const P = (k,v) => document.documentElement.style.setProperty(k, v);
 const D = (n, t) => {
 	let e = document.createElement('a');
@@ -79,4 +80,8 @@ function Y(o, t) {
 	let s = `polygon(${a.map(p => { const [x,y] = p; return `${x}% ${y}%`}).join(', ')})`.replaceAll('.00','');
 	if (o < 3) s = 'none';
 	P('--c', s);
+}
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
 }

@@ -7,6 +7,7 @@
 			 url('fonts/montserrat-v15-latin-regular.woff') format('woff');
 	font-display: swap;
 }
+/* VERSION 1.0.7 */
 :root {
 	--c: none;
 	--h: 197;
@@ -106,7 +107,7 @@ a {
 	color: currentColor;
 }
 a:focus {
-	outline: none;
+	outline: 0.25rem solid transparent;
 }
 button, input {
 	font-family: inherit;
@@ -579,7 +580,7 @@ NAVIGATION
 	clip-path: var(--c);
 }
 .ni:focus-visible circle {
-	outline: none;
+	outline: 0.25rem solid transparent;
 	stroke: var(--focus-c);
 	stroke-width: 0.25;
 }
@@ -700,7 +701,7 @@ RANGE
 	font-family: inherit;
 	height: var(--rng-h);
 	margin: 0;
-	outline: none;
+	outline: 0.25rem solid transparent;
 	position: relative;
 	touch-action: none;
 	width: 100%;

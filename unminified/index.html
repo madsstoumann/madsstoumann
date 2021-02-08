@@ -5,7 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="description" content="This is the personal website of Mads Stoumann">
-	<link href="assets/styles.css?v=1.0.5" rel="preload stylesheet" as="style" media="screen">
+	<link rel="preload" href="assets/fonts/montserrat-v15-latin-regular.woff2" crossorigin="anonymous" as="font" type="font/woff2">
+	<link href="assets/styles.css?v=1.0.7" rel="preload stylesheet" as="style" media="screen">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="theme-color" content="#035287">
 	<meta http-equiv="Content-Security-Policy" content="
 		default-src;
 		script-src 'self';
@@ -33,11 +39,11 @@
 		</label>
 
 		<a href="#poly" class="b pl" aria-label="Toggle Polygon Editor">
-			<svg class="i"><use fill="var(--c5)" xlink:href="#po"></use></svg>
+			<svg class="i" aria-hidden="true"><use fill="var(--c5)" xlink:href="#po"></use></svg>
 		</a>
 
 		<label class="b cl" for="cl" aria-label="Toggle High Contrast B/W Theme">
-			<svg class="i"><use fill="var(--cl-ico)" xlink:href="#ip"></use></svg>
+			<svg class="i" aria-hidden="true"><use fill="var(--cl-ico)" xlink:href="#ip"></use></svg>
 		</label>
 
 		<label class="an" for="a">
@@ -45,28 +51,28 @@
 		</label>
 
 		<a href="#grid" class="b gl" aria-label="Toggle Generated Colors">
-			<svg class="i"><use xlink:href="#io"></use></svg>
+			<svg class="i" aria-hidden="true"><use xlink:href="#io"></use></svg>
 		</a>
 
 		<article class="s" id="madsstoumann">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">Mads Stoumann</h2>
 			<p>Hi, I'm Mads.<br />Thanks for stopping by! I'm a web developer, graphic designer, type designer, musician, comicbook-geek, LEGO-collector, food lover  &hellip; as well as husband and father, located just south of Copenhagen, Denmark.</p>
 			<hr />
 			<p>I work as a Technical Director at Valtech. <br />Get in touch:</p>
-			<a href="https://linkedin.com/in/madsstoumann" tabindex="-1" rel="noopener" aria-label="LinkedIn"><svg class="i"><use xlink:href="#il"></use></svg></a>&nbsp;
-			<a href="https://github.com/madsstoumann" tabindex="-1" rel="noopener" aria-label="GitHub"><svg class="i"><use xlink:href="#ig"></use></svg></a>
+			<a href="https://linkedin.com/in/madsstoumann" tabindex="-1" rel="noopener" aria-label="LinkedIn"><svg class="i" aria-hidden="true"><use xlink:href="#il"></use></svg></a>&nbsp;
+			<a href="https://github.com/madsstoumann" tabindex="-1" rel="noopener" aria-label="GitHub"><svg class="i" aria-hidden="true"><use xlink:href="#ig"></use></svg></a>
 		</article>
 
 		<article class="s s--r2" id="graphicdesign">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">Graphic Design</h2>
 			<p>As a graphic designer, I've been lettering, coloring, layouting and designing hundreds and hundreds of comics, books and magazines. I've designed the typefaces used for the Nordic <em>Spirou-</em> and <em>Gaston Lagaffe-</em>comics, created ads, logos, brochures, toy-wrappings &hellip; and much more.</p><hr />
 			<p>With a group of friends, I co-founded what is today Denmarks largest comicbook-publisher:<br />Forlaget Zoom.</p>
 		</article>
 
 		<article class="s s--r3" id="programming">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">Pro&shy;gramming</h2>
 			<p>I've worked quite a lot with relational databases and the T-SQL-language. My backend-skills are limited to <em>Visual Basic</em> &mdash; I definitely feel more comfortable with JavaScript!</p>
 			<hr />
@@ -74,14 +80,14 @@
 		</article>
 
 		<article class="s s--r4" id="appsmusic">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">Apps & Music</h2>
 			<p>I love to create small editors and apps. This <a href="https://codepen.io/collection/XLakJY" tabindex="-1" rel="noopener">Codepen Collection</a> contains a bunch of small CSS-editors, I'm currently working on &hellip; more to come! On a larger scale, I've created <em>Logifront</em>, an app for complex form-logic — and <em>OneBlock</em>, a visual editor for CMS-systems (it has been implemented in epiServer-solutions).</p>
 			<p>I also love synthesizers, and I've played them since I was 12 years old.<br />You can listen to some of my stuff at <a href="https://soundcloud.com/mads-stoumann" tabindex="-1" rel="noopener">Soundcloud</a>.</p>
 		</article>
 
 		<article class="s s--r5" id="webdesign">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">Web Design</h2>
 			<p>I made my first website in 1995. It amazes me how much has changed — and yet — how much is still the same. I don't think HTML, CSS or JavaScript will be replaced with other languages in the foreseeable future.</p>
 			<hr />
@@ -89,7 +95,7 @@
 		</article>
 
 		<article class="s s--r6" id="articles">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">Articles</h2>
 			<p>I love to write about technology. I used to have my own blog, but after I discovered <em>dev.to</em>, I never looked back. It's such an intuitive platform, and you can <a href="https://dev.to/madsstoumann" tabindex="-1" rel="noopener">find all my articles here</a></p>
 			<hr />
@@ -97,7 +103,7 @@
 		</article>
 
 		<article class="s s--r7" id="news">
-			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="sc" href="#" tabindex="-1" aria-label="Close overlay"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<h2 class="sh">News</h2>
 			<p>I'm currently working on the next version of <em>OneBlock</em> for Valtech.</p>
 			<hr />
@@ -175,7 +181,7 @@
 		</div>
 
 		<div class="g" id="grid">
-			<a class="b glc" href="#" tabindex="-1" aria-label="Close"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+			<a class="b glc" href="#" tabindex="-1" aria-label="Close"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			<div class="gi gi--r"><span>Primary</span></div>
 			<div class="gi gi--r"><span>Complimentary</span></div>
 			<div class="gi gi--l"><span>Triad 1</span></div>
@@ -227,7 +233,7 @@
 
 		<div class="p" id="poly">
 			<div class="plc">
-				<a class="b" href="#" tabindex="-1" aria-label="Close"><svg class="i"><use xlink:href="#ic"></use></svg></a>
+				<a class="b" href="#" tabindex="-1" aria-label="Close"><svg class="i" aria-hidden="true"><use xlink:href="#ic"></use></svg></a>
 			</div>
 			<label class="plp">
 				<input class="sr" type="checkbox" id="t" name="text" tabindex="-1" />
@@ -245,6 +251,7 @@
 	</main>
 
 	<svg aria-hidden="true" class="h">
+		<title>Cicular Navigation</title>
 		<symbol id="ic" viewBox="0 0 16 16">
 			<path d="M8 0c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zM12 10.5l-1.5 1.5-2.5-2.5-2.5 2.5-1.5-1.5 2.5-2.5-2.5-2.5 1.5-1.5 2.5 2.5 2.5-2.5 1.5 1.5-2.5 2.5 2.5 2.5z"></path>
 		</symbol>
@@ -284,6 +291,6 @@
 		</defs>
 	</svg>
 
-	<script src="assets/main.js?v=1.0.4" defer></script>
+	<script src="assets/main.js?v=1.0.7" defer></script>
 </body>
 </html>	
