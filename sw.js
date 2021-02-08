@@ -36,6 +36,9 @@ self.addEventListener('fetch', (evt) => {
 	evt.respondWith(
 		caches.open(CACHE_NAME).then(async cache => {
 			const cacheResponse = await cache.match(evt.request);
+			if (evt.request.cache === 'only-if-cached' && evt.request.mode !== 'same-origin') {
+				return;
+			}
 			return cacheResponse || fetch(evt.request).then(networkResponse => {
 				cache.put(evt.request, networkResponse.clone());
 				return networkResponse;
