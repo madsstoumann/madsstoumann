@@ -1,11 +1,10 @@
-const CACHE_NAME = 'static-cache-v1.0.1';
+const CACHE_NAME = 'static-cache-v1.0.2';
 const FILES_TO_CACHE = [
 	'favicon.ico',
 	'/index.html',
 	'/site.webmanifest',
 	'/assets/favicon/favicon-32x32.png',
 	'/assets/favicon/android-chrome-192x192.png',
-	'/assets/fonts/montserrat-v15-latin-regular.woff',
 	'/assets/fonts/montserrat-v15-latin-regular.woff2',
 	'/assets/styles.css?v=1.0.7',
 	'/assets/main.js?v=1.0.7'
@@ -42,7 +41,9 @@ self.addEventListener('fetch', (evt) => {
 			return cacheResponse || fetch(evt.request).then(networkResponse => {
 				cache.put(evt.request, networkResponse.clone());
 				return networkResponse;
-			});
+			}).catch(function(e){
+				return new Response("", { "status" : 500 , "statusText" : "offline" });
+		 });
 		})
 	)
 });

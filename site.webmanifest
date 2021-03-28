@@ -20,7 +20,7 @@
     "lang": "en-US",
     "orientation": "any",
     "short_name": "Mads Stoumann",
-    "start_url": ".",
+    "start_url": "index.html",
     "theme_color": "#055387",
     "url": "https://stoumann.dk"
 }
