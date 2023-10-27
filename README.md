@@ -11,8 +11,7 @@ I'm a web developer, graphic designer, type designer, musician, comicbook-geek, 
 
 —— ✻ ——
 
-I work as a Technical Director at Valtech, Denmark.
-
+I'm a co-founder, and work as a Frontend Developer at Perfection.dev
 
 ---
 
