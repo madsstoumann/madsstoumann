@@ -11,14 +11,14 @@ I'm a web developer, graphic designer, type designer, musician, comicbook-geek, 
 
 —— ✻ ——
 
-I'm a co-founder, and work as a Frontend Developer at Perfection.dev
+I'm a co-founder and developer at Perfection.dev
 
 ---
 
 ## Latest Articles
-- [Frontend Security: Security Headers](https://dev.to/madsstoumann/frontend-security-content-security-policy-17dl)
-- [Accessible Image Compare — One Line of JavaScript](https://dev.to/madsstoumann/accessible-image-compare-one-line-of-javascript-3gn4)
-- [How to Play and Pause CSS Animations with CSS Custom Properties](https://css-tricks.com/how-to-play-and-pause-css-animations-with-css-custom-properties/)
+- [DEV.to](https://dev.to/madsstoumann/)
+- [CSS-Tricks](https://css-tricks.com/author/madsstoumann/)
+- [Logrocket](https://blog.logrocket.com/author/madsstoumann/)
 
 ---
 
